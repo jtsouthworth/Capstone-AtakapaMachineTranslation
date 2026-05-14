@@ -1,0 +1,26 @@
+rule_id,process_category,underlying_sequence,surface_sequence,context,regex_u2s_pattern,regex_u2s_replacement,regex_s2u_pattern,is_optional,example
+A01,Assimilation,šh,šš,morpheme boundary,š[\-\+]?h,šš,šš,True,iš-hat > iššat
+A02,Assimilation,nh,nn,morpheme boundary,n[\-\+]?h,nn,nn,True,tan-héw > tannéw
+A03,Assimilation,wh,ww,morpheme boundary,w[\-\+]?h,ww,ww,True,taw-hat > tawwat
+A04,Assimilation,yh,yy,morpheme boundary,y[\-\+]?h,yy,yy,True,kuy-hat > kuyyat
+A05,Assimilation,ln,ll,morpheme boundary,l[\-\+]?n,ll,ll,True,líl-nak > líllak
+A06,Assimilation,ln̥,nn,morpheme boundary,ln̥,nn,nn,True,cel-n̥ > cenn
+A07,Assimilation,ŋm,mm,morpheme boundary,ŋ[\-\+]?m,mm,mm,True,máŋ-maŋ > mámmaŋ
+A08,Assimilation,ŋn,nn,morpheme boundary,ŋ[\-\+]?n,nn,nn,True,nuŋ-núl > nunnúl
+A09,Assimilation,pk,kk,morpheme boundary,p[\-\+]?k,kk,kk,True,kóp-kop > kókkop
+A10,Assimilation,tk,kk,morpheme boundary,t[\-\+]?k,kk,kk,True,šokat-kéŋiš > šokakkéŋiš
+A11,Assimilation,tc,cc,morpheme boundary,t[\-\+]?c,cc,cc,True,hat-cewwán > haccewwán
+A12,Assimilation,kp,pp,morpheme boundary,k[\-\+]?p,pp,pp,True,nak-pémst > nappémst
+A13,Assimilation,kt,tt,morpheme boundary,k[\-\+]?t,tt,tt,True,hiyik-tá·to > hiyittá·to
+A14,Assimilation,kc,cc,morpheme boundary,k[\-\+]?c,cc,cc,True,pakcal > paccal
+A15,Assimilation,kƛ,ƛƛ,morpheme boundary,k[\-\+]?ƛ,ƛƛ,ƛƛ,True,ƛáw-nak-ƛáw > ƛáwnaƛƛáw
+A16,Assimilation,ky,kk,morpheme boundary,k[\-\+]?y,kk,kk,True,šak-yíkš > šakkíkš
+C01,Coalescence,V1+V2,V1·,morpheme boundary,([aeiou])[\-\+]?[aeiou],\1·,([aeiou])·,True,"a+u > a·, e+o > e·"
+C02,Coalescence,V1+h+V2,V1·,intervocalic h,([aeiou])[\-\+]?h[\-\+]?[aeiou],\1·,([aeiou])·,True,"o+hi > o·, a+ha > a·"
+S01,Syncope,šVk,š,word-initial,^š[aeiouʌə]k[\-\+]?,š,^š(?=[^aeiouʌə]),True,šaktálko > štálko
+O01,Orthography,ha,a,word-initial absent h,^h(?=[a]),,^[a],True,hat- > at-
+O01,Orthography,hi,I,word-initial absent h,^h(?=[i]),,^[i],True,hat- > at-
+O01,Orthography,ho,o,word-initial absent h,^h(?=[o]),,^[o],True,hat- > at-
+O02,Allophony,w,v,initial/medial bilabial fricative,w(?=[aeiou]),v,v,False,wíwat > vívat
+O03,Allophony,w,f,word-final voiceless fricative,w$,f,f$,False,wíwat > f (if word ends in w)
+O04,Orthography,h,k,H-stopping (Kišyuc speech),(?<=[aeiou])h(?=[aeiou]),k,(?<=[aeiou])k(?=[aeiou]),True,yáho > yako
