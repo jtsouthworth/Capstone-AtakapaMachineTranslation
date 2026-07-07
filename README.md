@@ -17,4 +17,5 @@ Next steps include addressing the resource scarce nature of the language by gene
 
 
 This project was inspired by LingoLLM <https://github.com/LeiLiLab/LingoLLM>
+
 Model weights can be found at: <https://huggingface.co/avovelekastrada/Atakapa_MAS_Translation>
